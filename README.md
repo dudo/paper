@@ -16,9 +16,7 @@ Within a div, you can have `<p>` elements, or `<ul> / <ol>` elements with `<li>`
 
 Individual `<p>` elements can become paper, as well.
 
-**examples:**
-
-*white*
+**white**
 ![white paper](/../screenshot/images/white.png?raw=true "White Paper")
 
     <div class='white paper'>
@@ -39,7 +37,7 @@ Individual `<p>` elements can become paper, as well.
       </p>
     </div>
 
-*legal*
+**legal**
 ![legal paper](/../screenshot/images/legal.png?raw=true "Legal Paper"")
 
     <div class='legal paper'>
@@ -53,7 +51,7 @@ Individual `<p>` elements can become paper, as well.
       <p>Another p element, without a br</p>
     </div>
 
-*engineer*
+**engineer**
 ![engineer paper](/../screenshot/images/ecp.png?raw=true "Engineering Computation Paper")
 
     <p class='engineer paper'>
