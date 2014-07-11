@@ -17,7 +17,6 @@ Within a div, you can have `<p>` elements, or `<ul> / <ol>` elements with `<li>`
 Individual `<p>` elements can become paper, as well.
 
 **white**
-![white paper](/../screenshot/images/white.png?raw=true "White Paper")
 
     <div class='white paper'>
       <ul>
@@ -37,8 +36,9 @@ Individual `<p>` elements can become paper, as well.
       </p>
     </div>
 
+![white paper](/../screenshot/images/white.png?raw=true "White Paper")
+
 **legal**
-![legal paper](/../screenshot/images/legal.png?raw=true "Legal Paper"")
 
     <div class='legal paper'>
       <p>
@@ -51,13 +51,16 @@ Individual `<p>` elements can become paper, as well.
       <p>Another p element, without a br</p>
     </div>
 
+![legal paper](/../screenshot/images/legal.png?raw=true "Legal Paper"")
+
 **engineer**
-![engineer paper](/../screenshot/images/ecp.png?raw=true "Engineering Computation Paper")
 
     <p class='engineer paper'>
       First line of a paper p<br>
       ... and the next<br>
       ... you get the idea
     </p>
+
+![engineer paper](/../screenshot/images/ecp.png?raw=true "Engineering Computation Paper")
 
 *Notice: any combination of elements can be used on any kind of paper... obviously*
