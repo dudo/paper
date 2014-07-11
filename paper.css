@@ -6,7 +6,6 @@
   box-shadow: 2px 2px 4px rgba(125, 125, 125, 0.5);
   border-radius: 3px;
 }
-// allows for list elements
 .paper ul {
   margin: 0px;
   padding: 0px;
@@ -16,22 +15,18 @@
   margin: 0px;
   cursor: pointer;
 }
-// allows for separate p elements within a div
 .paper p {
   margin: 0px;
 }
-// we don't want the element to be outlined when using contenteditable
 .paper p:focus {
   outline: none;
 }
 .paper:focus {
   outline: none;
 }
-// this overrides bootstraps -5 top margin on checkboxes
 .paper .checkbox + .checkbox {
   margin-top: 0px !important;
 }
-// this makes the first element of the p bigger (as a header of sorts)
 .paper:first-line {
   font: 20pt Arial, sans-serif;
   line-height: 33px;
@@ -41,7 +36,6 @@
   color: grey;
   text-decoration: line-through;
 }
-// a hole...
 .paper:after {
   content: '';
   width: 24px;
@@ -56,12 +50,12 @@
 .paper.legal {
   padding: 70px 10.5% 87% 10.5%;
   background-image:
-    linear-gradient(right, rgba(255, 100, 100, 0.1), rgba(255, 100, 100, 0.1)), // second red border
-    linear-gradient(right, rgba(255, 100, 100, 0.1), rgba(255, 100, 100, 0.1)), // second red border
-    linear-gradient(left, rgba(255, 100, 100, 0.5), rgba(255, 100, 100, 0.5)), // first red border
-    linear-gradient(left, rgba(255, 100, 100, 0.5), rgba(255, 100, 100, 0.5)), // first red border
-    linear-gradient(top, rgba(233, 220, 124, 0.9) 0px, rgba(233, 220, 124, 0.9) 89px, rgba(255, 255, 255, 0) 90px), // top blank space
-    repeating-linear-gradient(rgb(233, 220, 124) 0px, rgb(233, 220, 124) 18.5px, darkblue 19px, rgb(233, 220, 124) 20px); // blue lines
+    linear-gradient(left, rgba(255, 100, 100, 0.1), rgba(255, 100, 100, 0.1)),
+    linear-gradient(left, rgba(255, 100, 100, 0.1), rgba(255, 100, 100, 0.1)),
+    linear-gradient(left, rgba(255, 100, 100, 0.5), rgba(255, 100, 100, 0.5)),
+    linear-gradient(left, rgba(255, 100, 100, 0.5), rgba(255, 100, 100, 0.5)),
+    linear-gradient(top, rgba(233, 220, 124, 0.9) 0px, rgba(233, 220, 124, 0.9) 89px, rgba(255, 255, 255, 0) 90px),
+    repeating-linear-gradient(#e9dc7c 0px, #e9dc7c 18.5px, darkblue 19px, #e9dc7c 20px);
   background-size: 1px, 1px, 1px, 1px, auto, auto 20px;
   background-repeat: repeat-y, repeat-y, repeat-y, repeat-y, no-repeat, repeat;
   background-position: 90.4%, 90%, 9.6%, 10%, 0px 0px, 0px 0px;
@@ -69,29 +63,29 @@
 .paper.white {
   padding: 50px 10.5% 87% 10.5%;
   background-image:
-    linear-gradient(right, rgba(255, 100, 100, 0.1), rgba(255, 100, 100, 0.1)), // second red border
-    linear-gradient(left, rgba(255, 100, 100, 0.5), rgba(255, 100, 100, 0.5)), // first red border
-    linear-gradient(top, white 0px, white 69px, rgba(255, 255, 255, 0) 70px), // top blank space
-    repeating-linear-gradient(top, white 0px, white 18.5px, lightblue 19px, white 20px); // blue lines
+    linear-gradient(left, rgba(255, 100, 100, 0.1), rgba(255, 100, 100, 0.1)),
+    linear-gradient(left, rgba(255, 100, 100, 0.5), rgba(255, 100, 100, 0.5)),
+    linear-gradient(top, white 0px, white 69px, rgba(255, 255, 255, 0) 70px),
+    repeating-linear-gradient(top, white 0px, white 18.5px, lightblue 19px, white 20px);
   background-size: 1px, 1px, auto, auto 20px;
   background-repeat: repeat-y, repeat-y, no-repeat, repeat;
   background-position: 90%, 10%, 0px 0px, 0px 0px;
 }
 .paper.engineer {
-  padding: 50px 10.5% 26% 10.5%;
-  background-color: rgb(254,251,220);
+  padding: 50px 5% 85% 10.5%;
+  background-color: #fefbdc;
   background-image:
-    linear-gradient(right, rgba(0, 100, 50, 0.5), rgba(0, 100, 50, 0.5)), // second green line
-    linear-gradient(left, rgba(0, 100, 50, 0.5), rgba(0, 100, 50, 0.5)), // first green line
-    linear-gradient(rgb(254,251,220) 0px, rgb(254,251,220) 80px, rgba(254, 251, 220, 0) 85px), // top blank space
-    linear-gradient(right, rgb(254,251,220) 0%, rgb(254,251,220) 10.5%, rgba(254, 251, 220, 0) 10.5%), // right blank space
-    linear-gradient(left, rgb(254,251,220) 0%, rgb(254,251,220) 10.5%, rgba(254, 251, 220, 0) 10.5%), // right blank space
-    linear-gradient(top, rgba(0, 100, 50, 1), rgba(0, 100, 50, 1)), // top green line
-    repeating-linear-gradient(rgba(254, 251, 220, 0) 0px, rgba(254, 251, 220, 0) 18.5px, rgba(0, 100, 50, 0.1) 19px, rgba(254, 251, 220, 0.1) 20px), // little grid -
-    repeating-linear-gradient(rgba(254, 251, 220, 0) 0px, rgba(254, 251, 220, 0) 97.5px, rgba(0, 100, 50, 0.1) 99px, rgba(254, 251, 220, 0.1) 100px), // big grid -
-    repeating-linear-gradient(right, rgba(254, 251, 220, 0) 0px, rgba(254, 251, 220, 0) 18.5px, rgba(0, 100, 50, 0.1) 19px, rgba(254, 251, 220, 0.1) 20px), // little grid |
-    repeating-linear-gradient(right, rgba(254, 251, 220, 0) 0px, rgba(254, 251, 220, 0) 97.5px, rgba(0, 100, 50, 0.1) 99px, rgba(254, 251, 220, 0.1) 100px); // big grid |
+    linear-gradient(left, rgba(0, 100, 50, 0.5), rgba(0, 100, 50, 0.5)),
+    linear-gradient(left, rgba(0, 100, 50, 0.5), rgba(0, 100, 50, 0.5)),
+    linear-gradient(top, #fefbdc 0px, #fefbdc 80px, rgba(254, 251, 220, 0) 85px),
+    linear-gradient(right, #fefbdc 0%, #fefbdc 5.3%, rgba(254, 251, 220, 0) 5.3%),
+    linear-gradient(left, #fefbdc 0%, #fefbdc 10.3%, rgba(254, 251, 220, 0) 10.3%),
+    linear-gradient(top, #006432, #006432),
+    repeating-linear-gradient(top, rgba(254, 251, 220, 0) 0px, rgba(254, 251, 220, 0) 18.5px, rgba(0, 100, 50, 0.1) 19px, rgba(254, 251, 220, 0.1) 20px),
+    repeating-linear-gradient(top, rgba(254, 251, 220, 0) 0px, rgba(254, 251, 220, 0) 97.5px, rgba(0, 100, 50, 0.1) 99px, rgba(254, 251, 220, 0.1) 100px),
+    repeating-linear-gradient(left, rgba(254, 251, 220, 0) 0px, rgba(254, 251, 220, 0) 18.5px, rgba(0, 100, 50, 0.1) 19px, rgba(254, 251, 220, 0.1) 20px),
+    repeating-linear-gradient(left, rgba(254, 251, 220, 0) 0px, rgba(254, 251, 220, 0) 97.5px, rgba(0, 100, 50, 0.1) 99px, rgba(254, 251, 220, 0.1) 100px);
   background-size: 2px, 2px, auto, auto, auto, 3px, auto 20px, auto 100px, auto 20px, auto 100px;
   background-repeat: repeat-y, repeat-y, no-repeat, no-repeat, no-repeat, repeat-x, repeat, repeat, repeat, repeat;
-  background-position: 90%, 10%, 0px 0px, 0px 0px, 0px 0px, 0px 78px, 0px 0px, 0px -20px, 0px 0px, -5px 0px;
+  background-position: 95%, 10%, 0px 0px, 0px 0px, 0px 0px, 0px 78px, 0px 0px, 0px -20px, 13px 0px, 13px 0px;
 }
