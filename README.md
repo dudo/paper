@@ -59,3 +59,5 @@ Individual `<p>` elements can become paper, as well.
       ... and the next<br>
       ... you get the idea
     </p>
+
+*Notice: any combination of elements can be used on any kind of paper... obviously*
