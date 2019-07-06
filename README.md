@@ -1,13 +1,11 @@
-paper
-=====
+# Paper
 
 Just paper...
-
-**This is done purely with CSS**
 
 Add the `white paper` class to a `<div>` or `<p>` element and see what happens.
 
 Paper classes available:
+
 * white # Standard issue
 * legal # Legal pad
 * engineer # Engineering Computation Paper (ECP)
@@ -16,7 +14,7 @@ Within a div, you can have `<p>` elements, or `<ul> / <ol>` elements with `<li>`
 
 Individual `<p>` elements can become paper, as well.
 
-**white**
+## white paper
 
     <div class='white paper'>
       <ul>
@@ -38,7 +36,7 @@ Individual `<p>` elements can become paper, as well.
 
 ![white paper](/../screenshot/images/white.png?raw=true "White Paper")
 
-**legal**
+## legal pad
 
     <div class='legal paper'>
       <p>
@@ -53,14 +51,12 @@ Individual `<p>` elements can become paper, as well.
 
 ![legal paper](/../screenshot/images/legal.png?raw=true "Legal Paper")
 
-**engineer**
+## engineering computation paper
 
-    <p class='engineer paper'>
-      First line of a paper p<br>
+    <div class='engineer paper'>
+      First line of a div<br>
       ... and the next<br>
       ... you get the idea
-    </p>
+    </div>
 
 ![engineer paper](/../screenshot/images/ecp.png?raw=true "Engineering Computation Paper")
-
-*Notice: any combination of elements can be used on any kind of paper... obviously*
