@@ -51,7 +51,7 @@ Individual `<p>` elements can become paper, as well.
       <p>Another p element, without a br</p>
     </div>
 
-![legal paper](/../screenshot/images/legal.png?raw=true "Legal Paper"")
+![legal paper](/../screenshot/images/legal.png?raw=true "Legal Paper")
 
 **engineer**
 
